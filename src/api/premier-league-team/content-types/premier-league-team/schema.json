@@ -21,14 +21,8 @@
     "team_name": {
       "type": "string"
     },
-    "logo": {
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos"
-      ],
-      "type": "media",
-      "multiple": false
+    "img_url": {
+      "type": "string"
     }
   }
 }
