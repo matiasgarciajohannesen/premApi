@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "premier_league_teams",
+  "info": {
+    "singularName": "premier-league-team",
+    "pluralName": "premier-league-teams",
+    "displayName": "premier league teams",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "stadium": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::stadium.stadium",
+      "mappedBy": "premier_league_team"
+    },
+    "team_name": {
+      "type": "string"
+    }
+  }
+}

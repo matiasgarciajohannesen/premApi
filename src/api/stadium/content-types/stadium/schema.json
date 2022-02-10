@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "stadiums",
+  "info": {
+    "singularName": "stadium",
+    "pluralName": "stadiums",
+    "displayName": "Stadiums",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "stadium_name": {
+      "type": "string"
+    },
+    "premier_league_team": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::premier-league-team.premier-league-team",
+      "inversedBy": "stadium"
+    }
+  }
+}
