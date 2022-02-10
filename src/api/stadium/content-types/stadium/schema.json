@@ -20,6 +20,9 @@
       "relation": "oneToOne",
       "target": "api::premier-league-team.premier-league-team",
       "inversedBy": "stadium"
+    },
+    "Capacity": {
+      "type": "integer"
     }
   }
 }
